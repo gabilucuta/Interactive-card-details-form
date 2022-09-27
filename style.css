@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Space Grotesk' , sans-serif;
+    font-size: 18px;
+}
+
+body
+{
+    background: url(images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.main
+{
+   display: flex;
+   margin: 10% 10% 0% 10%;
+}
+
+.cardsHolder
+{
+    height: auto;
+}
+
+.faceCard
+{
+    width: 400px;
+    height: 200px;
+    background: url(images/bg-card-front.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: white;
+    box-shadow: 5px 5px 40px rgba(70, 70, 70, 0.495);
+
+
+}
+
+.faceCard img
+{
+    margin-bottom: 80px;
+}
+
+.cardNumber
+{
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.dates p
+{
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+
+
+.backCard
+{
+    width: 400px;
+    height: 200px;
+    background: url(images/bg-card-back.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-left: 100px;
+    color: white;
+    box-shadow: 5px 5px 40px rgba(70, 70, 70, 0.495);
+}
+
+.cvc
+{
+    position: relative;
+    top: 110px;
+    left: 350px;
+    width: 50px;
+    
+}
+
+.formContainer
+{
+    margin: 130px 130px 50px 130px;
+}
+
+.formContainer input
+{
+   width: 100%;
+   padding: 10px 0px 10px 10px;
+   border-radius: 5px;
+   border-color: #acacac90;
+
+}
+
+.formContainer p
+{
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    color: hsl(278, 68%, 11%);
+}
+
+
+
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.date
+{
+    width: 45%;
+}
+
+.mY
+{
+    display: flex;
+}
+
+.cvvc
+{
+    width: 45%;
+}
+
+.month
+{
+    margin-right: 5px;
+}
+
+.sumbit
+{
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    cursor: pointer;
+}
+
+.sumbit:hover
+{
+    background-color: rgba(53, 57, 115, 0.47);
+    transition: 0.3s;
+}
+
+
+
+.error
+{
+    font-size: 15px;
+    margin: 3px 0px;
+    opacity: 0;
+    color: hsl(0, 100%, 66%);
+}
+
+.dates
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.exp
+{
+    display: flex;
+}
+
+
+.confirm
+{
+    position: absolute;
+    right: 400px;
+    top: 300px;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+}
+
+.thanks
+{
+    letter-spacing: 2px;
+    margin: 10px 0px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.credits
+{
+
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: rgba(99, 103, 103, 0.925);
+    
+}
+
+.continue
+{ 
+    color: white;
+    background-color: hsl(278, 68%, 11%);
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 800px) {
+    body
+    {
+       background: none;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-content: center;
+    }
+
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-content:center;
+        justify-content: center;
+    }
+
+    .cardsHolder
+    {
+        background: url(images/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        margin-bottom: 100px;
+    }
+
+    .faceCard
+    {
+        height: 200px;
+        width: 350px;
+        position: relative;
+        top: 150px;
+        z-index: 2;
+    }
+
+    .cardNumber
+    {
+        font-size: 25px;
+    }
+
+    .backCard
+    {
+        height: 200px;
+        width: 350px;
+        position: absolute;
+        top: 10px;
+        z-index: ;
+    }
+
+    .backCard p
+    {
+        position: relative;
+        left: 300px;
+    }
+
+   
+   
+    .formContainer
+    {
+        align-content: center;
+        width: 400px;
+        margin: 20px 20px 20px 20px;
+    }
+
+   
+    .confirm
+    {
+        position: absolute;
+        top: 500px;
+        right: 250px;
+        display: none;
+    }
+
+    .attribution
+    {
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+}

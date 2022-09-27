@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <div class="main">
+    <div class="cardsHolder">
+         <div class="faceCard">
+          <img src="images/card-logo.svg" alt="card-logo">
+           <p id="cardNub" class="cardNumber">0000 0000 0000 0000</p>
+             <div class="dates">
+              <p id="holderName" class="holderName">JANE APPLESEED</p>
+              <div class="exp">
+              <p id="holderMonth" class="month">00</p>
+              <p>/ </p>
+              <p id="holderYear" class="holderYear">00</p>
+             </div> 
+          </div>
+     </div>
+<div class="backCard">
+  <p id="holderCVV" class="cvc">000</p>
+  </div>
+  </div>
+
+  <div id="formCont" class="formContainer">
+    <div class="name">
+      <p class="nameHolder">CARDHOLDER NAME</p>
+      <input id="inputName" class="inputName" onkeyup="myFunction1()" type="text" placeholder="e.g. Jane Appleseed">
+      <div id="errorName" class="error errorName">Cant'be blank...</div>
+    </div>
+    
+    <div class="card">
+      <p class="cardNumbr">CARD NUMBER</p>
+      <input id="cardNumber" type="text" onkeyup="myFunction1()" placeholder="e.g. 1234 5678 9123 0000" maxlength="16">
+      <div id="errorCard" class="error errorCard">Cant'be blank...</div>
+      <div id="errorImput" class="errorImput error">Wrong input...</div>
+    </div>
+
+
+    <div class="container">
+    <div class="date">
+      <p class="expDate">EXP.DATE(MM/YY)</p>
+      <div class="mY">
+      <input id="month" class="month" onkeyup="myFunction1()" type="text" placeholder="MM" maxlength="2" >
+      <input id="year" class="year"  onkeyup="myFunction1()" type="text" placeholder="YY" maxlength="2" >  
+
+      </div>
+      <div id="errorYearDate" class="error errorDate">Cant'be blank...</div>
+
+
+    </div>
+
+    <div class="cvvc">
+      <p class="cvcc">CVC</p>
+      <input id="cvvc" class="cvvc" onkeyup="myFunction1()" type="text" placeholder="e.g 123" maxlength="4">
+      <div id="errorCVC" class="error errorCVC">Cant'be blank...</div>
+
+    </div>
+    </div>
+
+    <input class="sumbit" type="submit" value="Confirm" onclick="myFunction()">
+    </div>
+  </div>
+  </div>
+
+  
+  
+
+
+  <!-- Completed state start -->
+<div id="confirm" class="confirm">
+  <img src="images/icon-complete.svg" alt="">
+ <p class="thanks">THANK YOU !</p>
+ <p class="credits">We've added your card details</p>
+ <button class="continue" type="button">Continue</button>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lucuta Gabriel</a>.
+  </div>
+  <script src="script.js"></script>
+
+</body>
+</html>
